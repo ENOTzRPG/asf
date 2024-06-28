@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #343434;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #242424;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        h2 {
+            margin: 20px 0 10px 0;
+            font-size: 1.5em;
+            color: #bbbbbb;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-left: 150px;
+        }
+
+        .column {
+            background-color: #424242;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .columnh1 {
+            display: flex;
+            justify-content: center;
+            background-color: #424242;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .column h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .column p {
+            margin: 10px 0;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #242424;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer2 {
+            width: 100%;
+            background-color: #242424;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+      
+        }
+
+        .footer2 a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .footer2 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test Cases</h1>
+    </header>
+    <main>
+        <section class="manual-testing">
+            <h2>Manual Testing</h2>
+            <div class="columnh1">Авторизация незарегистрированного пользователя без VPN</div><br>
+            <div class="container">
+                <div class="column plus-column">
+                    <h3>+</h3>
+                    <p>Попытка пользователя зайти была неудачной</p>
+                </div>
+                <div class="column details-column">
+                    <h3>Шаги тест-кейса</h3>
+                    <p>Вход на сайт lumos</p>
+                </div>
+                <div class="column minus-column">
+                    <h3>-</h3>
+                </div>
+            </div>
+            <div class="columnh1">Попытка входа авторизированного сотрудника</div><br>
+            <div class="container">
+                <div class="column plus-column">
+                    <h3>+</h3>
+                    <p>Успешный вход и выход, просто пользование и интуитивно понятное управление, быстрый отклик</p>
+                </div>
+                <div class="column details-column">
+                    <h3>Шаги тест-кейса</h3>
+                    <p>Вход на официальный сайт Lumos</p>
+                    <p>Ввод правельных данных пользователя</p>
+                    <p>Заход на главную страницу</p>
+                    <p>Выход из профиля</p>
+                </div>
+                <div class="column minus-column">
+                    <h3>-</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="premium-testing">
+            <h2>Premium Testing</h2>
+            <div class="columnh1">Авторизация зарегистрированного пользователя без VPN</div><br>
+            <div class="container">
+                <div class="column plus-column">
+                    <h3>+</h3>
+                    <p>Неудачный вход на главную страницу</p>
+                    <p>Неудачный вход на страницу авторизации lumos</p>
+                </div>
+                <div class="column details-column">
+                    <h3>Шаги тест-кейса</h3>
+                    <p>Заход на сайт с логином gurtam</p>
+                    <p>Ввод данных</p>
+                    <p>Вход на главную сраницу</p>
+                </div>
+                <div class="column minus-column">
+                    <h3>-</h3>
+                    <p>Успешный вход на страницу с авторизацией</p>
+                </div>
+            </div>
+            <div class="columnh1">Вход и создание клиента авторизированного сотрудника</div><br>
+            <div class="container">
+                <div class="column plus-column">
+                    <h3>+</h3>
+                    <p>понятный интерфейс</p>
+                    <p>Интуитивное управление</p>
+                    <p>Быстрая загрузка</p>
+                </div>
+                <div class="column details-column">
+                    <h3>Шаги тест-кейса</h3>
+                    <p>Вход на официальный сайт с авторизацией</p>
+                    <p>Ввод данных и вход на главную страницу</p>
+                    <p>Использование поиска и фильтра, для нахождение нужного TPs</p>
+                    <p>нахождение нужного TPs и вход на Accio</p>
+                    <p>Вход на Cunstomer и создание тестового Клиента</p>
+                    <p>Выход из двух аккаунтов</p>
+                </div>
+                <div class="column minus-column">
+                    <h3>-</h3>
+                    <p>Нельзя удалить клиентов из управление accio</p>
+                </div>
+            </div>
+            <div class="columnh1">Попытки входа на сайт</div><br>
+            <div class="container">
+                <div class="column plus-column">
+                    <h3>+</h3>
+                    <p></p>
+                </div>
+                <div class="column details-column">
+                    <h3>Шаги тест-кейса</h3>
+                    <p>Вход на сайт для авторизации</p>
+                    <p>Ввод рандомных данных для проверки</p>
+                    <p>Изменение даннах для проверки</p>
+                </div>
+                <div class="column minus-column">
+                    <h3>-</h3>
+                    <p>Попытки входа не блокировались</p>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <div class="footer2">
+        <a href="#">Ссылка на все тест-кейсы: https://timakasko.testrail.io/index.php?/admin/projects/edit/3/1</a>
+    </div>
+</body>
+</html>
